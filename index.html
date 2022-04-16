@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+</head>
+
+<body>
+  <svg id="demo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
+    <defs>
+      <path id="master" d="M 280 100 Q 500 10 700 100" stroke="transparent" fill="transparent" />
+    </defs>
+    <defs>
+      <path id="master2" d="M 480 120 Q 500 120 520 120" stroke="transparent" fill="transparent" />
+    </defs>
+    <defs>
+      <path id="master3" d="M 400 200 Q 500 170 600 200" stroke="transparent" fill="transparent" />
+    </defs>
+    <rect width="1000" height="500" fill="#ffffff" rx="20" />
+    <use xlink:href="#master" opacity="0.15" />
+    <text id="mainText" fill="#000">
+      <textPath id="masterTextPath" xlink:href="#master" startOffset="0%">Placeholder</textPath>
+    </text>
+    <text id="mainText2" fill="#000">
+      <textPath id="masterTextPath2" xlink:href="#master2" startOffset="0%">Placeholder</textPath>
+    </text>
+    <text id="mainText3" fill="#000">
+      <textPath id="masterTextPath3" xlink:href="#master3" startOffset="0%">Placeholder</textPath>
+    </text>
+  </svg>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
